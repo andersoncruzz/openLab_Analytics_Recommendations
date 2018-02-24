@@ -989,7 +989,8 @@ h5.breadcrumbs-header {
 /* flight card */
 #flight-card .flight-card-title {
   margin: 0;
-  font-weight: 300;
+  /*font-weight: 300;*/
+  font-weight: bold;
   color: #fff;
 }
 
@@ -1018,6 +1019,14 @@ h5.breadcrumbs-header {
 
 #flight-card .card-content-bg {
   background: url("../images/1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#flight-card .card-content-bg1 {
+  background: url("../images/2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
