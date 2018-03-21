@@ -3672,6 +3672,27 @@ nav ul a span.badge {
   color:#2479a9;
 }
 
+[class^="mdi-action-account-circle"]:before, [class*="mdi-communication-chat"]:before {
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  color:#2479a9;
+}
+
+[class^="mdi-action-account-circle"]:before, [class*="mdi-av-my-library-books"]:before {
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  color:#2479a9;
+}
+
+[class^="mdi-action-account-circle"]:before, [class*="mdi-image-remove-red-eye"]:before {
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  color:#2479a9;
+}
+
 [class^="mdi-"].pull-left, [class*="mdi-"].pull-left {
   margin-right: .3em;
 }

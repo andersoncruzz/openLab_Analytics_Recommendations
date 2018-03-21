@@ -15,7 +15,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Turmas A </title>
+    <title>Turma A </title>
 
   <!-- Favicons-->
   <link rel="icon" href="images/favicon/signal.png" sizes="32x32">
@@ -67,9 +67,16 @@
                     </ul>
                     
                     <ul class="right hide-on-med-and-down">
+                      <li ><a href="metricas_geral.html"><i class="mdi-image-remove-red-eye" ></i></a>
+                      </li>
+                     <li ><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown2"><i class="mdi-av-my-library-books" ></i>                       
+                        </a>
+                        </li> 
                         <li ><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-action-account-circle" ></i>                       
                         </a>
-                        </li>                        
+                        </li>   
+                         <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"><small class="notification-badge">5</small></i></a>
+                        </li>                      
                        
                     </ul>
                    
@@ -91,6 +98,20 @@
                                     <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
                                     </li>
                     </ul>
+
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown2" class="dropdown-content">
+                                    <li><a href="avaliacao1.html"></i> Avaliação 1</a>
+                                    </li>
+                                    <li><a href="#"></i> Avaliação 2 </a>
+                                    </li>
+                                    <li><a href="#"></i> Avaliação 3 </a>
+                                    </li>
+                                    <li><a href="#"></i>Avaliação 4 </a>
+                                    </li>
+                                    <li><a href="#"></i>Avaliação 5</a>
+                                    </li>
+                    </ul>
                 </div>
             </nav>     
             
@@ -107,7 +128,8 @@
             <section id="content">
                 <!--start container-->
                 <div class="container"> 
-                <p class="caption"><strong>Turma A - Analíticos de Aprendizagem - Aluno</strong></p>
+                  
+                <h1 class="header center " >Desempenho Geral Turma A </h1> 
                 <div class="divider"></div> </br>
              
             <!--card stats start-->
@@ -116,8 +138,8 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  green white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Score</p>
-                                        <h4 class="card-stats-number">7.27</h4>
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Média Geral da Nota</p>
+                                        <h4 class="card-stats-number">300</h4>
                                         <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 69% <span class="green-text text-lighten-5">da última aula</span>
                                         </p>
                                     </div>
@@ -129,7 +151,7 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content pink lighten-1 white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Confusão</p>
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Média Geral do Desvio</p>
                                         <h4 class="card-stats-number">5.76</h4>
                                         <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-down"></i> 45% <span class="deep-purple-text text-lighten-5">do último mês</span>
                                         </p>
@@ -142,8 +164,8 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content blue-grey white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Desvio</p>
-                                        <h4 class="card-stats-number">7.36</h4>
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Média Geral Tempo Resposta</p>
+                                        <h4 class="card-stats-number">1055</h4>
                                         <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span class="blue-grey-text text-lighten-5">do último mês</span>
                                         </p>
                                     </div>
@@ -155,8 +177,8 @@
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content purple white-text">
-                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i>Compreensão</p>
-                                        <h4 class="card-stats-number">8.54</h4>
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Nível de Compreensão</p>
+                                        <h4 class="card-stats-number">44 minutos</h4>
                                         <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 79% <span class="purple-text text-lighten-5">da última aula</span>
                                         </p>
                                     </div>
@@ -169,43 +191,31 @@
                     </div>
                     <!--card stats end-->   
                 </br>
-            <div class="row">            
-              <div class="col s12 m8 l12">
-                 <div id="striped-table">
-                  <div class="row">
-                
-                <div class="col s12 m8 l12">
-                  <table class="striped">
-                    <thead>
-                      <tr>
-                        <th data-field="id">Matrícula</th>
-                        <th data-field="name">Nome</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>23354657</td>
-                        <td>Giselle de Almeida Costa</td>
-                      </tr>
-                      <tr>
-                        <td>45443546</td>
-                        <td>Elisa de Almeida Cruz</td>
-                      </tr>
-                      <tr>
-                        <td>34365768</td>
-                        <td>Anderson Araújo da Cruz</td>
-                      </tr>
-                      <tr>
-                        <td>47763225</td>
-                        <td>Gabriel Leitão</td>
-                      </tr>
-                    </tbody>
-                  </table>
+
+             
+
+                         <h1 class="header center ">Histórico das Avalições</h1>
+                  <div class="divider"></div> </br>
+                  <div id="chartjs" class="section">               
+                    <div class="row">                    
+                    <div class="col s12 m4 l6">
+                      <div class="sample-chart-wrapper">
+                        <canvas id="line-chart-sample" height="120"></canvas>
+                      </div>
+                    </div>
+                    <div class="col s12 m4 l6">
+                      <div class="sample-chart-wrapper">
+                        <canvas id="bar-chart-sample" height="120"></canvas>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-              </div>
-            </div>
+
+                <!--card stats end-->   
+            
+
+        </div>
+       <!--end container-->
 
         </div>
        <!--end container-->
@@ -217,10 +227,54 @@
     </div>
     <!-- END MAIN -->
 
+      <aside id="right-sidebar-nav">
+                <ul id="chat-out" class="side-nav rightside-navigation">
+                    <li class="li-hover">
+                    <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+                    <div id="right-search" class="row">
+                        <form class="col s12">
+                            <div class="input-field">
+                                <i class="mdi-action-search prefix"></i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Search</label>
+                            </div>
+                        </form>
+                    </div>
+                    </li>
+                    <li class="li-hover">
+                        <ul class="chat-collapsible" data-collapsible="expandable">
+                        <li>
+                           <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Recomendações</div>
+                            <div class="collapsible-body sales-repoart">
+                                <div class="sales-repoart-list  chat-out-list row">
+                                    <div class="col s8">Revisar assunto de matrizes com a turma A</div>
+                                    <div class="col s4"><a href="Linguagens.html"><span id="sales-line-1"></span></a>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Revisar assunto de trigonometria com a turma B</div>
+                                    <div class="col s4"><a href="Linguagens.html"><span id="sales-bar-1"></span></a>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Revisar assunto de Função com a turma E</div>
+                                    <div class="col s4"><a href="Linguagens.html"><span id="sales-line-2"></span></a>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Atenção com a Turma G!</div>
+                                    <div class="col s4"><a href="Linguagens.html"><span id="sales-bar-2"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <!-- LEFT RIGHT SIDEBAR NAV-->
 
-</br>
-</br>
-</br>
+
 </br>
 </br>
 </br>
@@ -260,6 +314,7 @@
     <!-- chartjs -->
     <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
     <script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script>
+     <script type="text/javascript" src="js/plugins/chartjs/chartjs-sample-chart.js"></script>
 
     <!-- sparkline -->
     <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
